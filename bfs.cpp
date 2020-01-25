@@ -3,8 +3,8 @@
 #include <vector>
 #include <queue>
 #define MAX 100100
-#define FIN "bfs.in"
-#define FOUT "bfs.out"
+#define FIN "graph.in"
+#define FOUT "graph.out"
 
 int nodes, edges;
 std::vector<int> graphs[MAX];
