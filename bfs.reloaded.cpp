@@ -13,7 +13,6 @@ vector<uint> Graph[SIZE];
 uint visited[SIZE];
 queue<uint> q;
 uint nodes, edges;
-int costs[SIZE];
 
 void addEdge(int x, int y) {
 
