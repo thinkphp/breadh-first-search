@@ -25,9 +25,9 @@ class Breadth_First_Search {
 	  	         }
 
 	  public: 
-	  	   void execute() {
+	       void execute() {
 
-                costs[ source ] = 0;
+                            costs[ source ] = 0;
 
 	  	   	    bfs(source);  
 
@@ -131,6 +131,12 @@ int main(int argc, char const *argv[])
     for(vector<long>::const_iterator it = costs.begin()  + 1; it != costs.end(); ++it) 
 
     fout<<*it<<" ";      
-     
+	
+    //clean up
+    for(ulong i = 0; i < adjList.size(); ++i) {
+
+    	if(adjList[i] != NULL) delete adjList[i];	
+    }      
+	
 	return 0;
 }
